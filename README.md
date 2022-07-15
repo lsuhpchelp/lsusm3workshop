@@ -1,3 +1,1 @@
-# lsusm3workshop
-
-SuperMike-III Launch workshop
+# SuperMike-III Launch workshop
