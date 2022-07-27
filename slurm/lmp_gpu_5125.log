@@ -1,0 +1,115 @@
+Date              = Tue Jul 26 21:46:16 CDT 2022
+Hostname          = mike176
+Working Directory = /home/fchen14/loniqb3workshop/slurm
+
+Number of Nodes Allocated      = 1
+Slurm Nodes Allocated          = mike176
+Number of Tasks Allocated      = 64
+Number of Cores/Task Allocated = 1
+Autoloading cuda/11.6.0
+
+Loading lammps/23Jun2022/intel-2021.5.0-cuda-11.6.0-intel-mpi-2021.5.1
+  Loading requirement: cuda/11.6.0
+LAMMPS (23 Jun 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 1.6795962 1.6795962 1.6795962
+Created orthogonal box = (0 0 0) to (167.95962 167.95962 167.95962)
+  2 by 4 by 4 MPI processor grid
+Created 4000000 atoms
+  using lattice units in orthogonal box = (0 0 0) to (167.95962 167.95962 167.95962)
+  create_atoms CPU = 0.019 seconds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- GPU package (short-range, long-range and three-body potentials):
+The log file lists these citations in BibTeX format.
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+
+--------------------------------------------------------------------------
+- Using acceleration for lj/cut:
+-  with 16 proc(s) per device.
+-  Horizontal vector operations: ENABLED
+-  Shared memory system: No
+--------------------------------------------------------------------------
+Device 0: NVIDIA A100-PCIE-40GB, 108 CUs, 33/39 GB, 1.4 GHZ (Mixed Precision)
+Device 1: NVIDIA A100-PCIE-40GB, 108 CUs, 1.4 GHZ (Mixed Precision)
+--------------------------------------------------------------------------
+
+Initializing Device and compiling on process 0...Done.
+Initializing Devices 0-1 on core 0...Done.
+Initializing Devices 0-1 on core 1...Done.
+Initializing Devices 0-1 on core 2...Done.
+Initializing Devices 0-1 on core 3...Done.
+Initializing Devices 0-1 on core 4...Done.
+Initializing Devices 0-1 on core 5...Done.
+Initializing Devices 0-1 on core 6...Done.
+Initializing Devices 0-1 on core 7...Done.
+Initializing Devices 0-1 on core 8...Done.
+Initializing Devices 0-1 on core 9...Done.
+Initializing Devices 0-1 on core 10...Done.
+Initializing Devices 0-1 on core 11...Done.
+Initializing Devices 0-1 on core 12...Done.
+Initializing Devices 0-1 on core 13...Done.
+Initializing Devices 0-1 on core 14...Done.
+Initializing Devices 0-1 on core 15...Done.
+
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.005
+Per MPI rank memory allocation (min/avg/max) = 27.88 | 27.88 | 27.88 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   1.44          -6.7733668      0             -4.6133674     -5.019671     
+       200   0.75688783    -5.7579538      0             -4.6226223      0.22499302   
+Loop time of 2.19172 on 32 procs for 200 steps with 4000000 atoms
+
+Performance: 39421.068 tau/day, 91.252 timesteps/s
+99.7% CPU use with 32 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.3047     | 0.60919    | 0.88943    |  25.9 | 27.80
+Neigh   | 6.581e-06  | 1.0927e-05 | 1.9809e-05 |   0.0 |  0.00
+Comm    | 0.64197    | 1.0599     | 1.5384     |  30.1 | 48.36
+Output  | 0.0016751  | 0.0060619  | 0.008729   |   2.9 |  0.28
+Modify  | 0.22904    | 0.35655    | 0.46987    |  13.5 | 16.27
+Other   |            | 0.16       |            |       |  7.30
+
+Nlocal:         125000 ave      125247 max      124791 min
+Histogram: 2 2 5 4 4 5 6 3 0 1
+Nghost:        47952.2 ave       48133 max       47737 min
+Histogram: 1 1 6 2 5 4 3 4 3 3
+Neighs:              0 ave           0 max           0 min
+Histogram: 32 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 10
+Dangerous builds not checked
+
+
+---------------------------------------------------------------------
+      Device Time Info (average): 
+---------------------------------------------------------------------
+Data Transfer:   0.1329 s.
+Neighbor copy:   0.0006 s.
+Neighbor build:  0.0414 s.
+Force calc:      0.2322 s.
+Device Overhead: 0.7173 s.
+Average split:   1.0000.
+Lanes / atom:    4.
+Vector width:    32.
+Max Mem / Proc:  105.44 MB.
+CPU Neighbor:    0.0436 s.
+CPU Cast/Pack:   0.4208 s.
+CPU Driver_Time: 0.0058 s.
+CPU Idle_Time:   0.1532 s.
+---------------------------------------------------------------------
+
+Total wall time: 0:00:30
