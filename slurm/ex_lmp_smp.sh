@@ -19,5 +19,5 @@ echo
 module load lammps/23Jun2022/intel-2021.5.0-intel-mpi-2021.5.1
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-/usr/bin/time $(which lmp_omp) -in in.lmp.lj -pk omp $SLURM_CPUS_PER_TASK -sf omp
+/usr/bin/time $(which lmp_omp) -in in.lmp.ser.lj -pk omp $SLURM_CPUS_PER_TASK -sf omp
 

@@ -16,5 +16,5 @@ echo "Number of Tasks Allocated      = $SLURM_NTASKS"
 
 module load lammps/23Jun2022/intel-2021.5.0-intel-mpi-2021.5.1
 
-/usr/bin/time $(which lmp_serial) -in in.lmp.lj 
+/usr/bin/time $(which lmp_serial) -in in.lmp.ser.lj 
 
